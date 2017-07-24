@@ -39,7 +39,7 @@ Download and install https://addons.mozilla.org/en-GB/firefox/addon/selenium-ide
 3. Refreshing the page will generate a new HAR file located at (usually) ```~/.mozilla/firefox/[user]/har/logs```
 4. To automate using Selenium script:
     1. Go to about:addons and Selenium IDE "Preferences"
-	  2. Under "Selenium Core Extensions", select **user-extension.js** as provided
+	  2. Under "Selenium Core Extensions", select **user-extension.js** as provided (make sure while.js is in the same directory)
     3. Go to ```Firefox > Tools > Selenium IDE ```
 	  4. Right click "Add Test Case" and select the **selenium** file as provided
 	  5. Run test case
