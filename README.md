@@ -4,6 +4,7 @@ Originally used to test websites against a mid-latency network.
 
 Raw sampled HAR data also provided.
 
+Note: It does not use har-export-trigger automation method as it is unreliable (especially for JavaScript rendered websites) because it does not wait for DOM completion
 ## Prerequisite
 ```
 pip install haralyzer
@@ -23,7 +24,6 @@ Load temporary add-on: **harexporttrigger-0.5.0-beta.10.xpi** (currently no sign
 use these settings:
 ````
 devtools.netmonitor.har.enableAutoExportToFile = true
-extensions.netmonitor.har.enableAutomation = true
 extensions.netmonitor.har.contentAPIToken = "test"
 ````
 #### 3. (Optional) In Firefox Developer Tools (F12):
@@ -35,8 +35,7 @@ Download and install https://addons.mozilla.org/en-GB/firefox/addon/selenium-ide
 
 ## How to use
 1. Open Firefox with the above settings
-2. Open Firefox Developer Tools and then visit a website for testing
-3. Refreshing the page will generate a new HAR file located at (usually) ```~/.mozilla/firefox/[user]/har/logs```
+2. Open Firefox Developer Tools and then visit a website for testing. Genereated HAR files are located at (usually) ```~/.mozilla/firefox/[user]/har/logs```
 4. To automate using Selenium script:
     1. Go to about:addons and Selenium IDE "Preferences"
 	  2. Under "Selenium Core Extensions", select **user-extension.js** as provided (make sure while.js is in the same directory)
