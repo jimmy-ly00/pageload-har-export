@@ -23,7 +23,6 @@ Load temporary add-on: **harexporttrigger-0.5.0-beta.10.xpi** (currently no sign
 #### 2. about:config
 use these settings:
 ````
-devtools.netmonitor.har.enableAutoExportToFile = true
 extensions.netmonitor.har.contentAPIToken = "test"
 ````
 #### 3. (Optional) In Firefox Developer Tools (F12):
