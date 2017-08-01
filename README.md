@@ -4,7 +4,7 @@ Originally used to test websites against a mid-latency network.
 
 Raw sampled HAR data also provided.
 
-Note: It does not use har-export-trigger automation method as it is unreliable (especially for JavaScript rendered websites) because it does not wait for DOM completion
+Note: It does not use page ready method as it is unreliable (especially for JavaScript rendered websites) because it sometimes does not wait for DOM completion
 ## Prerequisite
 ```
 pip install haralyzer
@@ -24,6 +24,7 @@ Load temporary add-on: **harexporttrigger-0.5.0-beta.10.xpi** (currently no sign
 use these settings:
 ````
 extensions.netmonitor.har.contentAPIToken = "test"
+extensions.netmonitor.har.enableAutomation = "true"
 ````
 #### 3. (Optional) In Firefox Developer Tools (F12):
 ```settings > tick "disable HTTP Cache"```
