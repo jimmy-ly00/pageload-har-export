@@ -9,8 +9,10 @@ Note: It does not use page ready method as it is unreliable (especially for Java
 ```
 pip install haralyzer
 ```
+**Optional** (for graph.py script, can be ommitted):
 ```
-pip install matplotlib (may require sudo apt-get install python-tk) (required for graph.py, can be ommited)
+pip install matplotlib (may require sudo apt-get install python-tk)
+pip install numpy
 ```
 ## Environment
 Linux and Firefox 54 (should work with 42+)
