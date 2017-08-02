@@ -9,7 +9,7 @@ Note: It does not use page ready method as it is unreliable (especially for Java
 ```
 pip install haralyzer
 ```
-**Optional** (for graph.py script, can be ommitted):
+**Optional** (for graph.py script, can be omitted):
 ```
 pip install matplotlib (may require sudo apt-get install python-tk)
 pip install numpy
